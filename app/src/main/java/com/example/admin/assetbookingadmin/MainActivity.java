@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//
-//        ringProgressBar1 = (RingProgressBar) findViewById(R.id.progress_bar_1);
+
+        ringProgressBar1 = (RingProgressBar) findViewById(R.id.progress_bar_1);
         ringProgressBar2 = (RingProgressBar) findViewById(R.id.progress_bar_2);
 
         ringProgressBar1.setOnProgressListener(new RingProgressBar.OnProgressListener() {
@@ -62,4 +62,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }).start();
     }
+
+    String test ="Test";
 }
